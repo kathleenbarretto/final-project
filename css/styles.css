@@ -1,0 +1,150 @@
+/** {
+	margin: 0;
+	padding: 0;
+}*/
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-position: top;
+	background: #ffffff
+	height: 100%;
+}
+
+/* Responsive grid system defaults*/
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+/* End of responsive grid system defaults*/
+
+#bg-wrapper {
+	background: #ffffff url("/images/blurry.jpg") no-repeat right top;
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#header-container {
+	width: 100%;
+	position: fixed;
+}
+
+#header {
+	background-color: transparent;
+	height: 100px;
+	width: 93.75%%;
+	z-index: 999;
+	margin: 0 auto;
+	padding-top: 1%;
+	position: relative;
+}
+
+.pages {
+	float:right;
+	margin-top: 20px;
+}
+
+.navbar a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	color: #56544d;
+	letter-spacing: .15em;
+	font-size: 0.8em;
+	margin-left: 30px;
+}
+
+.intro-text {
+	padding-top: 150px;
+	text-align: center;
+	z-index: 2;
+	position: relative;
+	padding-bottom: 150px;
+}
+
+.typed-text {
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-size: 3.0em;
+	letter-spacing: .05em;
+	line-height: 1.2em;
+}
+
+/*typed cursor*/
+.typed-cursor{
+	font-size: 4.0em;
+	font-weight: 100;
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+/*end of typed cursor*/
+
+#home h3 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4em;
+	font-weight: 300;
+}
+
+.bounce {
+	padding-top: 40px;
+}
+
+#top {
+	height: 700px;
+}
+
+
+.content {
+	width: 100%;
+	height: 600px;
+	position: relative;
+	border: 1px solid #000;
+}
+
+.scroll-section {
+	width: 100%
+	z-index: 40;
+	position: relative;
+	padding-top: 120px;
+	padding-bottom: 250px;
+	overflow-x: hidden;
+	overflow-y: hidden; 
+}
+
+
+
+
