@@ -31,52 +31,21 @@ body {
 }
 /* End of responsive grid system defaults*/
 
-#bg-wrapper {
-	background: #ffffff url("/images/blurry.jpg") no-repeat right top;
-	z-index: -1;
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 100%;
+.intro-text-container {
+	text-align: center;
+	z-index: 40;
+	top: 50%;
+	height: 350px;
+	margin-top: -135px;
+	overflow: hidden;
+	position: absolute;
 	width: 100%;
-}
-
-#header-wrapper {
-	width: 100%;
-	position: fixed;
-	background-color: #ffffff;
-/*	background-color: rgba(255,255,255,0.5);*/
-	z-index: 100;
-}	
-
-#header {
-	height: 80px;
-	width: 93.75%%;
-	margin: 0 auto;
-/*	position: relative;*/
-}
-
-.pages {
-	float:right;
-	margin-top: 20px;
-}
-
-.navbar a {
-	text-transform: uppercase;
-	text-decoration: none;
-	font-family: 'Lato', sans-serif;
-	color: #56544d;
-	letter-spacing: .15em;
-	font-size: 0.8em;
-	margin-left: 30px;
+	z-index: 10;
 }
 
 .intro-text {
-	padding-top: 270px;
-	text-align: center;
-	z-index: 40;
-	position: relative;
-	padding-bottom: 200px;
+	width: 75%;
+	margin: 0 auto;
 }
 
 .typed-text {
@@ -113,34 +82,77 @@ body {
 }
 /*end of typed cursor*/
 
-#home h3 {
+.intro-text h3 {
 	font-family: 'Lato', sans-serif;
 	font-size: 1.4em;
 	font-weight: 300;
+	margin-bottom: 30px;
 }
 
-.bounce {
-	padding-top: 30px;
+#header-wrapper {
+	width: 100%;
+	background-color: #FFFFFF;
+	z-index: 1000;
+}	
+
+.header{
+	width: 100%;
+	height: 75px;
+	width: 93.75%%;
+	margin: 0 auto;
+	height: 70px;
+}
+
+.sections-menu {
+	float:right;
+	margin-top: 17px;
+}
+
+.navbar a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	color: #56544d;
+	letter-spacing: .15em;
+	font-size: 0.8em;
+	margin-left: 24px;
+}
+
+#about {
+	background-color: #f9f9f5;
 }
 
 .content {
 	width: 100%;
-	height: 500px;
-	position: relative;
-	border: 1px solid #000;
-	padding-top: 80px;
-}
-
-.scroll-section {
-	width: 100%;
 	z-index: 50;
 	position: relative;
-/*	overflow-x: hidden;
-	overflow-y: hidden; */
+	overflow: hidden;
 }
 
-#about {
-	background: transparent;
+.title-about {
+	margin: 0 auto;
+	padding-top: 10%;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6em;
+	font-weight: 300;
+	line-height: 1.8em;
+	text-align: center;
 }
 
+#about .mac {
+	margin: 0 auto;
+}
+
+
+/*unused CSS*/
+/*#bg-wrapper {
+	background: #ffffff url("/images/blurry.jpg") no-repeat right top;
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+*/
 
