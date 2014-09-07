@@ -3,7 +3,7 @@
 	padding: 0;
 }*/
 
-body {
+html, body {
 	margin: 0 auto;
 	padding: 0;
 	background-position: top;
@@ -138,8 +138,17 @@ a:link, a:visited, a:hover, a:active {
 	margin-left: 24px;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 #about {
-	background-color: #f9f9f5;
+	background-color: #F6F7F4;
+}
+
+#about .title {
+	width: 93.75%%;
 }
 
 .content {
@@ -149,14 +158,54 @@ a:link, a:visited, a:hover, a:active {
 	overflow: hidden;
 }
 
-.title-about {
+.title {
 	margin: 0 auto;
 	padding-top: 10%;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.6em;
 	font-weight: 300;
-	line-height: 1.8em;
+	line-height: 1.6em;
 	text-align: center;
+}
+
+.work-item h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	letter-spacing: .09em;
+	text-align: left;
+	color: #1aaba3;
+	text-transform: uppercase;
+}
+
+.work-item p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.0em;
+	line-height: 1.4em;
+	font-weight: 300;
+	text-align: left;
+	color: #56544d;
+}
+
+.center-content {
+	width: 93.75%;
+	margin: 0 auto;
+}
+
+.odd .work-description  {
+	float: left;
+}
+
+.odd .browser {
+	float: right;
+}
+
+.even .work-description {
+	float: right;
+}
+
+.even .browser {
+	float: left;
 }
 
 #about .mac {
@@ -164,10 +213,25 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .about-images {
-	padding-bottom: 8%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	width: 93.75%;
+	text-align: center;
 }
 
+#footer {
+	width: 100%;
+	position: absolute;
+	background: #FFF;
+}
 
+#footer	p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #AAA;
+	font-size: 0.875em;
+	margin-left: 2%;
+}
 /*unused CSS*/
 /*#bg-wrapper {
 	background: #ffffff url("/images/blurry.jpg") no-repeat right top;
