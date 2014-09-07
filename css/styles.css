@@ -26,7 +26,7 @@ body {
 .group:after {
 	clear:both;
 }
-.group {
+{
     zoom:1; /* For IE 6/7 */
 }
 /* End of responsive grid system defaults*/
@@ -103,6 +103,26 @@ body {
 	height: 70px;
 }
 
+#logo {
+	margin-top: 14px;
+}
+#logo a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+	color: #56544d;
+	letter-spacing: .08em;
+	background-color: #fff;
+	border: 2px solid #1aaba3;
+	padding: 7px;
+
+}
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+
 .sections-menu {
 	float:right;
 	margin-top: 17px;
@@ -141,6 +161,10 @@ body {
 
 #about .mac {
 	margin: 0 auto;
+}
+
+.about-images {
+	padding-bottom: 8%;
 }
 
 
