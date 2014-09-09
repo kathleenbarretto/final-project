@@ -2,7 +2,7 @@ $(document).ready(function(){
 	
 	// Typed text
   	$('.typed-text').typed({
-		strings: ["Hello, ^600 my name is Kathleen."],
+		strings: ["Hi, ^600 my name is Kathleen."],
 		typeSpeed: 60,
 		// To add a second sentence, activate the two lines below.
 		// backDelay: 4000,
@@ -38,8 +38,19 @@ $(document).ready(function(){
     	setHeight();
   	});
 
+	// Sticky header
 	$('#header-wrapper').sticky({topSpacing:0});
 
+	// Instafeed
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: 3804157,
+        accessToken: '3804157.467ede5.7b0fdab4cd4e48ee805799b23ab855b3',
+        resolution: 'low_resolution',
+        limit: 12,
+        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+    });
+    userFeed.run();
 
 
 

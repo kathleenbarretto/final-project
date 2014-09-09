@@ -12,6 +12,7 @@
 		<script type="text/javascript" src="/js/move.min.js"></script>
 		<script type="text/javascript" src="/js/jquery.backstretch.min.js"></script>
 		<script type="text/javascript" src="/js/jquery.sticky.js"></script>
+		<script type="text/javascript" src="/js/instafeed.min.js"></script>
 		<!-- My scripts -->
 		<script type="text/javascript" src="/js/scripts.js"></script>
 		<!-- Less -->
@@ -21,6 +22,8 @@
 		<link rel="stylesheet" type="text/css" href="/css/12cols.css">
 		<link rel="stylesheet" type="text/css" href="/css/2cols.css">
 		<link rel="stylesheet" type="text/css" href="/css/3cols.css">	
+		<!-- Animation CSS -->
+		<link rel="stylesheet" type="text/css" href="/css/animate.min.css">
 		<!-- My stylesheet !-->
 		<link rel="stylesheet" type="text/css" href="/css/styles.css">
 		<!--Favicon !-->
@@ -36,8 +39,8 @@
 				<div class="intro-text">
 					<span class="typed-text"></span>
 					<span class="typed-cursor"></span>
-					<h3>I'm a web designer and developer in San Francisco.</h3>
-					<div class="bounce"><a href="#about"><img src="images/arrow-down.svg"></a></div>
+					<h3>I'm a web designer and developer in training.</h3>
+					<div id="arrow" class="animated bounce"><a href="#about"><img src="images/arrow-down.png"></a></div>
 				</div>
 			</div>	
 		</div>	
@@ -53,7 +56,8 @@
 					<div class="sections-menu">
 						<a href="#about">About</a>
 						<a href="#work">Work</a>
-						<a href="#contact">Contact</a>	
+						<a href="#social">Social</a>	
+						<a href="#connect">Connect</a>	
 					</div>						
 				</nav>
 			</header>	
@@ -62,7 +66,7 @@
 		<div id="content-wrapper">
 			<!-- #About -->
 			<div id="about" class="content">
-				<div class="title">Here is some placeholder text. I have yet to write something about being both creative and logical.</div>
+				<div class="title">Here is some placeholder text. Write second sentence here.</div>
 				<div class="section group about-images center-content">
 						<div class="col span_3_of_12"><img src="images/layout.png"></div>
 						<div class="col span_6_of_12 mac"><img src="images/imac-flat.png"></div>
@@ -81,6 +85,11 @@
 							<div>
 								<h2>Three Leaf Tea</h2>
 								<p>Insert a two sentence description about the project here. This is a filler sentence for now.</p>
+								<ul>
+									<li>Branding |</li>
+									<li>UX Design |</li>
+									<li>UI Design</li>
+								</ul>
 							</div>
 						</div>
 						<div class="col span_7_of_12 browser">
@@ -88,6 +97,7 @@
 						</div>
 					</div>	
 				</div>
+				<hr />
 				<!-- Project #2: Tip Calculator -->
 				<div class="work-item">
 					<div class="tip-calc even section group center-content">
@@ -95,10 +105,14 @@
 							<div>
 								<h2>Tip Calculator</h2>
 								<p>Insert a two sentence description about the project here. This is a filler sentence for now.</p>
+								<ul>
+									<li>UX Design |</li>
+									<li>UI Design</li>
+								</ul>
 							</div>
 						</div>
 						<div class="col span_7_of_12 browser">
-
+							<img src="images/three-leaf-browser.png">
 						</div>
 					</div>	
 				</div>
@@ -109,31 +123,38 @@
 							<div>
 								<h2>Thank a Teacher</h2>
 								<p>Insert a two sentence description about the project here. This is a filler sentence for now.</p>
+								<ul>
+									<li>UX Design |</li>
+									<li>UI Design</li>
+								</ul>
 							</div>
 						</div>
 						<div class="col span_7_of_12 browser">
-
+							<img src="images/three-leaf-browser.png">
 						</div>
 					</div>	
 				</div>
 			</div>	
-			<!-- Contact -->
-			<div id="contact" class="content">
+			<!-- Social -->
+			<div id="social" class="content">
+				<div class="center-content">
+					<div class="title">Here's a little peek into my everyday adventures.</div>
+					<div id="instafeed"></div>
+				</div>
+			</div>
+			<!-- Connect -->
+			<div id="connect" class="content">
 				<div class="title">Let's connect.</div>
-				<div class="section group content">
-					<div id="contact-form" class="col span_6_of_12">
+				<div class="content">
+					<div id="contact-form" class="col span_12_of_12">
 						<h2></h2>
-					</div>
-					<div id="contact-social" class="col span_6_of_12">
-						<div>Latest Pics from Instagram</div>
-						<div>Social media buttons for other sites.</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- FOOTER -->
 		<div id="footer" class="section group">
-			<div class="col span_12_of_12"><p>&copy; 2014 Kathleen Barretto</p></div>
+			<div class="center-content"><p>&copy; 2014 Kathleen Barretto</p></div>
 		</div>
 	</body>
 </html>

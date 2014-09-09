@@ -34,7 +34,7 @@ html, body {
 .intro-text-container {
 	text-align: center;
 	z-index: 40;
-	top: 50%;
+	top: 55%;
 	height: 350px;
 	margin-top: -135px;
 	overflow: hidden;
@@ -54,13 +54,16 @@ html, body {
 	font-size: 3.0em;
 	letter-spacing: .05em;
 	line-height: 1.2em;
+	/*color: #585858;*/
+	color: #686673;
 }
 
 /*typed cursor*/
 .typed-cursor{
-	font-size: 4.0em;
+	font-size: 3.4em;
 	font-weight: 100;
 	opacity: 1;
+	color: #686673;
 	-webkit-animation: blink 0.7s infinite;
 	-moz-animation: blink 0.7s infinite;
 	animation: blink 0.7s infinite;
@@ -87,6 +90,14 @@ html, body {
 	font-size: 1.4em;
 	font-weight: 300;
 	margin-bottom: 30px;
+	color: #686673;
+}
+
+#arrow {
+	padding-top: 4%;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
 }
 
 #header-wrapper {
@@ -114,7 +125,7 @@ html, body {
 	color: #56544d;
 	letter-spacing: .08em;
 	background-color: #fff;
-	border: 2px solid #1aaba3;
+	border: 2px solid #b2878f;
 	padding: 7px;
 
 }
@@ -161,11 +172,16 @@ img {
 .title {
 	margin: 0 auto;
 	padding-top: 10%;
+	padding-bottom: 5%;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.6em;
 	font-weight: 300;
 	line-height: 1.6em;
 	text-align: center;
+}
+
+.work-item {
+	margin-top: 10%;
 }
 
 .work-item h2 {
@@ -187,9 +203,27 @@ img {
 	color: #56544d;
 }
 
+.work-description ul {
+	padding: 0;
+}
+
+.work-description ul li {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.8em;
+	line-height: 1em;
+	font-weight: 300;
+	text-align: left;
+	color: #BEBFBD;
+	display: inline;
+}
+
 .center-content {
 	width: 93.75%;
 	margin: 0 auto;
+}
+
+.work-description div {
+	margin: auto 0;
 }
 
 .odd .work-description  {
@@ -202,10 +236,12 @@ img {
 
 .even .work-description {
 	float: right;
+	margin-left: 1.6%
 }
 
 .even .browser {
 	float: left;
+	margin-left: 0%
 }
 
 #about .mac {
@@ -213,10 +249,35 @@ img {
 }
 
 .about-images {
-	padding-top: 10%;
+	padding-top: 5%;
 	padding-bottom: 10%;
 	width: 93.75%;
 	text-align: center;
+}
+
+hr {
+	margin-top: 5%;
+	width: 80%;
+	background: #fff;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
+	border-bottom-color: rgba(208,208,208,0.5);
+}
+
+#instafeed {
+	text-align: center;
+}
+
+#instafeed img {
+	margin-top: 5px;
+	margin-left: 1%;
+	position: relative;
+	display: inline-block;
+	width: 20%;
 }
 
 #footer {
@@ -230,7 +291,6 @@ img {
 	font-weight: 300;
 	color: #AAA;
 	font-size: 0.875em;
-	margin-left: 2%;
 }
 /*unused CSS*/
 /*#bg-wrapper {
