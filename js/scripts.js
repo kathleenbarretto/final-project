@@ -39,7 +39,7 @@ $(document).ready(function(){
   	});
 
 	// Sticky header
-	$('#header-wrapper').sticky({topSpacing:0});
+	$('#header').sticky({topSpacing:0});
 
 	// Instafeed
     var userFeed = new Instafeed({
@@ -48,11 +48,18 @@ $(document).ready(function(){
         accessToken: '3804157.467ede5.7b0fdab4cd4e48ee805799b23ab855b3',
         resolution: 'low_resolution',
         limit: 12,
-        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
     });
     userFeed.run();
 
-
+    //responsive header
+    var windowWidth = $(window).innerWidth();
+    if (windowWidth <= 480) {
+      $('.hide-me').hide();
+    } else {
+      $('.hide-me').show();
+    }
+    
 
 
 	// Dynamic header based on scrolling
