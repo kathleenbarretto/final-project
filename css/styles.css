@@ -166,6 +166,10 @@ img {
 	background: #89BBCF;
 }
 
+#about .center-content {
+	text-align: center;
+}
+
 #about .title {
 	color: #f9f9f5;
 	padding-top: 10%;
@@ -197,6 +201,7 @@ img {
 
 #work {
 	background: #f7f7f7;	
+	padding-bottom: 7%;
 }
 
 .work-item {

@@ -4,7 +4,7 @@ $(document).ready(function(){
   	$('.typed-text').typed({
 		strings: ["Hi, ^600 my name is Kathleen."],
 		typeSpeed: 60,
-		// To add a second sentence, activate the two lines below.
+		// To add a second sentence, activate the two lines below and add a second string to the array above.
 		// backDelay: 4000,
 		// loop: true,
   	});
@@ -27,16 +27,15 @@ $(document).ready(function(){
 
 	//fully responsive cover section
 	$("#cover-section").backstretch("/images/blurry.jpg");
-	function setHeight() {
+	
+  function setHeight() {
     	windowHeight = $(window).innerHeight();
    		$('#cover-section').css('min-height', windowHeight);
-  		};
+  }
   	
-  	setHeight();
+  onWindowResize();
   
-	$(window).resize(function() {
-    	setHeight();
-  	});
+	$(window).resize(onWindowResize);
 
 	// Sticky header
 	$('#header').sticky({topSpacing:0});
@@ -53,14 +52,15 @@ $(document).ready(function(){
     userFeed.run();
 
     //responsive header
-    var windowWidth = $(window).innerWidth();
-    if (windowWidth <= 480) {
-      $('.hide-me').hide();
-    } else {
-      $('.hide-me').show();
+    function onWindowResize() {
+      var windowWidth = $(window).innerWidth();
+      if (windowWidth <= 480) {
+        $('.hide-me').hide();
+      } else {
+        $('.hide-me').show();
+      }
+      setHeight();
     }
-    
-
 
 	// Dynamic header based on scrolling
     // var header = $('.transparent-header-wrapper');
