@@ -289,10 +289,6 @@ hr {
 	border-bottom-color: rgba(208,208,208,0.5);
 }
 
-#social {
-	background-color: rgba(250,250,250,0.5);
-}
-
 #instafeed {
 	text-align: center;
 /*	padding-top: 4%;*/
@@ -338,26 +334,39 @@ hr {
 	content: "\e600";
 	font-size: 2.5em;
 	color: #C4959E;
-	margin-left: 5%;
-/*	padding-bottom: 15px;*/
+/*	margin-left: 5%;*/
+/*	padding-bottom: 15px;
+*/	padding-left: 5%;
+/*	float: left;*/
 
 }
 .icon-email:before {
 	content: "\e601";
 	font-size: 2.5em;
 	color: #C4959E;
-	margin-right: 5%;
+/*	margin-right: 5%;*/
+	padding-right: 5%;
+/*	float: right;*/
+}
+
+#connect {
+	background: #f7f7f7;
 }
 
 .social-icons {
-	padding-bottom: 6%;
+	padding-bottom: 8%;
 	text-align: center;
 }
 
 #footer {
 	width: 100%;
 	position: absolute;
-	background: #FFF;
+	background: #fff;
+}
+
+#footer div {
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 #footer	p {

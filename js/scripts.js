@@ -59,6 +59,12 @@ $(document).ready(function(){
       } else {
         $('.hide-me').show();
       }
+      if (windowWidth <= 395) {
+        $('nav').hide();
+      }
+      else {
+        $('nav').show();
+      }
       setHeight();
     }
 
