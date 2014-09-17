@@ -54,12 +54,12 @@ $(document).ready(function(){
     //responsive header
     function onWindowResize() {
       var windowWidth = $(window).innerWidth();
-      if (windowWidth <= 480) {
+      if (windowWidth <= 520) {
         $('.hide-me').hide();
       } else {
         $('.hide-me').show();
       }
-      if (windowWidth <= 395) {
+      if (windowWidth <= 420) {
         $('nav').hide();
       }
       else {
