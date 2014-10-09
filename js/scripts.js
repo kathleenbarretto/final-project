@@ -1,6 +1,9 @@
 $(document).ready(function(){
 	
-	// Typed text
+	 // Sticky header
+  $('#header').sticky({topSpacing:0});
+
+  // Typed text
   	$('.typed-text').typed({
 		strings: ["Hi, ^600 my name is Kathleen."],
 		typeSpeed: 60,
@@ -36,9 +39,6 @@ $(document).ready(function(){
   onWindowResize();
   
 	$(window).resize(onWindowResize);
-
-	// Sticky header
-	$('#header').sticky({topSpacing:0});
 
 	// Instafeed
     var userFeed = new Instafeed({
